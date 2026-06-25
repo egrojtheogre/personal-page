@@ -176,7 +176,7 @@
 			<h2 class="section-title">My Projects</h2>
 			<div class="projects-grid">
 				<!-- Project 1 -->
-				 <!--
+				<!--
 				<div class="project-card">
 					<img src="assets/project_1_1777696738523.png" alt="Project 1" class="project-image">
 					<div class="project-info">
@@ -192,7 +192,7 @@
 				</div>
 				-->
 				<!-- Project 2 -->
-				 <!--
+				<!--
 				<div class="project-card">
 					<img src="assets/project_2_1777696757519.png" alt="Project 2" class="project-image">
 					<div class="project-info">
@@ -209,11 +209,11 @@
 				-->
 				<!-- Project 3 -->
 				<div class="project-card">
-					<img src="assets/saucepage.png"
-						alt="Project 3" class="project-image">
+					<img src="assets/saucepage.png" alt="Project 3" class="project-image">
 					<div class="project-info">
 						<h3>On the shelf site test automation</h3>
-						<p>A sauce demo page test automation using POM which covers main and significant flows for E-Commerce.</p>
+						<p>A sauce demo page test automation using POM which covers main and significant flows for
+							E-Commerce.</p>
 						<div class="project-tags">
 							<span class="tag">Playwright</span>
 							<span class="tag">Python</span>
@@ -225,8 +225,10 @@
 				<div class="project-card">
 					<img src="assets/double_pedal.png" alt="Project 4" class="project-image">
 					<div class="project-info">
-						<a href="https://1drv.ms/w/c/00aae9ed8fbf3d43/IQAQYIAHJG-ASp6wQ9E7wZlUATiR3DSoDx1agbZ0zE8Mvo0?e=dAcKAJ" target="_blank"
-								rel="noopener noreferrer"><h3>DIY Drumming pedal Restoration</h3></a>
+						<a href="https://1drv.ms/w/c/00aae9ed8fbf3d43/IQAQYIAHJG-ASp6wQ9E7wZlUATiR3DSoDx1agbZ0zE8Mvo0?e=dAcKAJ"
+							target="_blank" rel="noopener noreferrer">
+							<h3>DIY Drumming pedal Restoration</h3>
+						</a>
 						<p>Restoration of an old P3002-C double pedal by pearl. I disassembled the entire pedal, cleaned
 							every part, replaced the
 							worn out parts, painted the frame with vibrant colorsand reassembled the pedal. </p>
@@ -246,8 +248,34 @@
 			<div class="contact-container">
 				<p class="contact-text">I'm currently open for new opportunities. Whether you have a question or just
 					want to say hi, I'll try my best to get back to you!</p>
-				<a href="mailto:hello@example.com" class="btn btn-primary"><i class="fas fa-paper-plane"
-						style="margin-right: 8px;"></i> Send an Email</a>
+				<!--<a href="mailto:hello@example.com" class="btn btn-primary"><i class="fas fa-paper-plane"
+						style="margin-right: 8px;"></i> Send an Email</a>-->
+
+				<form id="contactForm" class="contact-form">
+					<input type="hidden" name="access_key" value="46216d2a-391c-435e-bdfb-247f797bca2a">
+
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" id="name" name="name" placeholder="Your Name" required>
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email Address</label>
+						<input type="email" id="email" name="email" placeholder="name@example.com" required>
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea id="message" name="message" rows="5" placeholder="Type your message here..."
+							required></textarea>
+					</div>
+
+					<button type="submit" id="submitBtn" class="btn btn-primary">
+						<i class="fas fa-paper-plane" style="margin-right: 8px;"></i> Send Message
+					</button>
+				</form>
+
+				<div id="formResponse" class="form-response" style="display:none;"></div>
 
 				<div class="social-links">
 					<a href="https://github.com/egrojtheogre" target="_blank" rel="noopener noreferrer"
